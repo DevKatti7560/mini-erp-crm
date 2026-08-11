@@ -2,7 +2,7 @@
 
 A full-stack Mini Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM) System built with React, Node.js, Express.js, Prisma, and PostgreSQL featuring JWT Authentication, Role-Based Access Control, Customer Management, Product Management, Inventory Management, Stock Movement Tracking, Sales Challan Management, Dashboard Analytics, and a modern responsive interface.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://mini-erp-crm-chi-green.vercel.app/login)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://mini-erp-crm-chi-green.vercel.app/)
 [![Backend](https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge&logo=render)](https://mini-erp-crm-api-ia60.onrender.com)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/DevKatti7560/mini-erp-crm)
 
