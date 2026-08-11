@@ -6,17 +6,14 @@ A full-stack Mini Enterprise Resource Planning (ERP) and Customer Relationship M
 [![Backend](https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge&logo=render)](https://mini-erp-crm-api-ia60.onrender.com)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/DevKatti7560/mini-erp-crm)
 
----
-
 ## 🌐 Live Demo
 
-- 🚀 **Frontend:** https://mini-erp-crm.vercel.app
-- ⚙️ **Backend API:** https://mini-erp-crm-api-ia60.onrender.com
-- 📦 **GitHub:** https://github.com/DevKatti7560/mini-erp-crm
+* 🚀 **Frontend / Live Demo:** https://mini-erp-crm-chi-green.vercel.app/
+* ⚙️ **Backend API:** https://mini-erp-crm-api-ia60.onrender.com
+* 📦 **GitHub:** https://github.com/DevKatti7560/mini-erp-crm
 
-> **Note:** Replace the Vercel URL above with your actual Vercel deployment URL if Vercel assigned a different domain.
+> **Note:** The frontend is deployed on Vercel and the backend API is deployed on Render.
 
----
 
 # ✨ Features
 
