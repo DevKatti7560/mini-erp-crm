@@ -719,71 +719,75 @@ JWT_SECRET
 
 # 📸 Screenshots
 
-## 🔐 Login
+## 📝 Register
 
-![Login](screenshots/login.png)
+![Register](screenshots/00-register.png)
 
 ---
 
-## 📝 Register
+## 🔐 Login
 
-![Register](screenshots/register.png)
+![Login](screenshots/01-login.png)
 
 ---
 
 ## 📊 Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/02-dashboard.png)
 
 ---
 
 ## 👥 Customers
 
-![Customers](screenshots/customers.png)
+![Customers](screenshots/03-customers.png)
 
 ---
 
 ## 👤 Customer Details
 
-![Customer Details](screenshots/customer-details.png)
+![Customer Details](screenshots/04-customer-details.png)
 
 ---
 
 ## 📦 Products
 
-![Products](screenshots/products.png)
+![Products](screenshots/05-products.png)
 
 ---
 
-## 📊 Inventory
+## 📊 Stock Management
 
-![Inventory](screenshots/inventory.png)
+![Stock Management](screenshots/06-stock-management.png)
+
+---
+
+## 📋 Inventory Movements
+
+![Inventory Movements](screenshots/07-inventory-movements.png)
 
 ---
 
 ## 🧾 Sales Challans
 
-![Sales Challans](screenshots/challans.png)
+![Sales Challans](screenshots/08-challans.png)
 
 ---
 
 ## ➕ Create Sales Challan
 
-![Create Challan](screenshots/create-challan.png)
+![Create Challan](screenshots/09-create-challan.png)
 
 ---
 
 ## 📄 Challan Details
 
-![Challan Details](screenshots/challan-details.png)
+![Challan Details](screenshots/10-challan-details.png)
 
 ---
 
 ## 🚫 Negative Stock Validation
 
-![Negative Stock Validation](screenshots/negative-stock.png)
-
----
+![Negative Stock Validation](screenshots/11-negative-stock-validation.png)
 
 # 🚀 Future Enhancements
 
