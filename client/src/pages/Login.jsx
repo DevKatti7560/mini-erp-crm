@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import {
+  Link,
+  Navigate,
+  useNavigate,
+} from "react-router-dom";
 import toast from "react-hot-toast";
 
 import { useAuth } from "../context/AuthContext";
@@ -95,7 +99,14 @@ const Login = () => {
           >
             {loading ? "Signing in..." : "Sign In"}
           </button>
-        </form>
+                </form>
+
+        <div className="auth-footer">
+          Don't have an account?{" "}
+          <Link to="/register">
+            Create an account
+          </Link>
+        </div>
 
         <div className="login-demo">
           <strong>Demo Account</strong>

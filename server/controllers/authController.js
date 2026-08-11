@@ -6,6 +6,7 @@ const register = async (req, res) => {
   try {
     const { name, email, password, role } = req.body;
 
+    // Validate required fields
     if (!name || !email || !password) {
       return res.status(400).json({
         success: false,
@@ -13,6 +14,24 @@ const register = async (req, res) => {
       });
     }
 
+    // Roles allowed for public registration
+    const allowedRoles = [
+      "SALES",
+      "WAREHOUSE",
+      "ACCOUNTS",
+    ];
+
+    const selectedRole = role || "SALES";
+
+    // Prevent ADMIN registration
+    if (!allowedRoles.includes(selectedRole)) {
+      return res.status(400).json({
+        success: false,
+        message: "Invalid registration role",
+      });
+    }
+
+    // Check whether email already exists
     const existingUser = await prisma.user.findUnique({
       where: { email },
     });
@@ -24,14 +43,19 @@ const register = async (req, res) => {
       });
     }
 
-    const hashedPassword = await bcrypt.hash(password, 10);
+    // Hash password
+    const hashedPassword = await bcrypt.hash(
+      password,
+      10
+    );
 
+    // Create user
     const user = await prisma.user.create({
       data: {
         name,
         email,
         password: hashedPassword,
-        role: role || "SALES",
+        role: selectedRole,
       },
     });
 
@@ -55,10 +79,12 @@ const register = async (req, res) => {
   }
 };
 
+
 const login = async (req, res) => {
   try {
     const { email, password } = req.body;
 
+    // Validate fields
     if (!email || !password) {
       return res.status(400).json({
         success: false,
@@ -66,6 +92,7 @@ const login = async (req, res) => {
       });
     }
 
+    // Find user
     const user = await prisma.user.findUnique({
       where: { email },
     });
@@ -77,6 +104,7 @@ const login = async (req, res) => {
       });
     }
 
+    // Compare password
     const passwordMatch = await bcrypt.compare(
       password,
       user.password
@@ -89,6 +117,7 @@ const login = async (req, res) => {
       });
     }
 
+    // Generate JWT
     const token = jwt.sign(
       {
         id: user.id,
@@ -120,6 +149,7 @@ const login = async (req, res) => {
     });
   }
 };
+
 
 module.exports = {
   register,
